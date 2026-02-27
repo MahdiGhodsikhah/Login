@@ -42,3 +42,17 @@ section .girl{
     animation: animateGirl 10s linear infinite;
 }
 
+@keyframes animateGirl {
+    0%{
+        transform: translateX(calc(100% + 100vw));
+    }
+    50%{
+        transform: translateX(calc(-100% - 100vw));
+    }
+    50.01%{
+        transform: translateX(calc(-100% - 100vw)) rotateY(180deg);
+    }
+    100%{
+        transform: translateX(calc(100% + 100vw)) rotateY(180deg);
+    }
+}
